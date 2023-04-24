@@ -33,7 +33,7 @@ $(function() {
 
                 mainDiv.addEventListener('click', (e) => {
                     e.preventDefault();
-                    location.pathname = 'team.html';
+                    location.pathname = '/team.html';
                     console.log([x] == data[x].id);
                     localStorage.setItem('0', `${x}`);
                 })
@@ -146,7 +146,7 @@ for (const [key, value] of Object.entries(localStorage)) {
 
                 subSearch.addEventListener('click', (e) => {
                     e.preventDefault()
-                    location.pathname = "/player-details/player.html"
+                    location.pathname = "/player.html"
                     localStorage.setItem('1', JSON.stringify(`${val.playerName}`))
                 })
 
